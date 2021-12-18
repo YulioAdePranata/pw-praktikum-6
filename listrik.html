@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Praktikum 6</title>
+    </head>
+    <body>
+        <center>
+            <div class="header">
+                <h1>PT. Once Sejahtera</h1>
+                <img src="https://clipartspub.com/images/thunder-clipart-lightning-symbol-6.png" alt="lightning symbol">
+            </div>
+            <br>
+            <div class="inputdata">
+                <table>
+                    <tr>
+                        <td>Nama pelanggan: </td>
+                        <td><input type="text" placeholder="Masukkan nama" id="nama"></td>
+                    </tr>
+                    <tr>
+                        <td>Pilih kategori: </td>
+                        <td>
+                            <select id="kategori">
+                                <option value="Sosial">Sosial</option>
+                                <option value="Rumah">Rumah</option>
+                                <option value="Apartemen">Apartemen</option>
+                                <option value="Industri">Industri</option>
+                                <option value="Villa">Villa</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Jumlah pemakaian: </td>
+                        <td><input type="number" placeholder="Masukkan jumlah" id="pemakaian"></td>
+                    </tr>
+                </table>
+                <br>
+                <button id="button">Hitung</button>
+            </div>
+        </center>
+
+        <div class="hasil" onload="Function">
+            <center>
+                <h1>Tagihan Listrik</h1>
+                    <table>
+                        <tr>
+                            <td>Nama Pelanggan: </td>
+                            <td id="isinama"></td>
+                        </tr>
+                        <tr>
+                            <td>Kategori: </td>
+                            <td id="isikategori"></td>
+                        </tr>
+                        <tr>
+                            <td>Jumlah pemakaian</td>
+                            <td id="isipemakaian"></td>
+                        </tr>
+                    </table>
+             </center>
+            <br>
+            <center>
+                <h1>Rincian Tagihan</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Jumlah</th>
+                        <th>Tarif per KWH</th>
+                        <th>Abodemen</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody id="tabel">
+
+                </tbody>
+            </table>
+        </div>
+    </center>
+    <br>
+    <center>
+        <table>
+            <tr>
+                <td>Subtotal: </td>
+                <td id="hasilsubtotal"></td>
+            </tr>
+            <tr>
+                <td>Pajak: </td>
+                <td id="hasilpajak"></td>
+            </tr>
+            <tr>
+                <td>Bayar: </td>
+                <td id="hasilbayar"></td>
+            </tr>
+        </table>
+        <script src="listrik.js"></script>
+    </center>
+    </body>
+</html>
